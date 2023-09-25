@@ -1,3 +1,4 @@
+tabs: ['pages/index.js']
+baseImage: 'next11'
+defaultView: 'terminal-editor-browser'
 terminal-one: yarn && yarn dev
-tabs: ['src/App.jsx', 'src/Categories.jsx']
-live-reload-browser: false

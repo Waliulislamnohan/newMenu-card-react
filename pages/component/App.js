@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Menu from './Menu'
 import Categories from './Categories'
 import items from './data'
-
+import styles from '../../styles/Home.module.css'
 // dynamically calculate unqiue values here
 const categories = ['all',...new Set(items.map(item => item['category']))]
 
@@ -19,10 +19,10 @@ function App() {
 
 	return (
 		<main>
-			<section className="menu section">
-				<div className="title">
+			<section className={styles.menuSection}>
+				<div className={styles.title}>
 					<h2>our menu</h2>
-					<div className="underline"></div>
+					<div className={styles.underline}></div>
 				</div>
 				<Categories categories={categories} filterItems={filterItems} />
 				<Menu items={menuItems} />
