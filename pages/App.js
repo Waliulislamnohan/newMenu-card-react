@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Menu from './Menu'
-import Categories from './Categories'
-import items from './data'
-import styles from '../../styles/Home.module.css'
+import Menu from '../component/Menu'
+import Categories from '../component/Categories'
+import items from '../src/data'
+import styles from '../styles/Home.module.css'
 // dynamically calculate unqiue values here
 const categories = ['all',...new Set(items.map(item => item['category']))]
 

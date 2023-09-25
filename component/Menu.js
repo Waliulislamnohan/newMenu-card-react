@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/Home.module.css';
+import styles from '../styles/Home.module.css'
 // accept props here
 const Menu = (props) => {
 	const items = props.items
